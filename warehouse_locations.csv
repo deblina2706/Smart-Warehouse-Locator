@@ -1,0 +1,46 @@
+Warehouse_ID,Name,Latitude,Longitude,Cost,Connectivity,Capacity,Ownership,City
+1,EM Bypass,22.334173,88.243058,15000,Good,2200,Azmet Enterprise,Kolkata
+2,Ruby Park,22.516571,88.368352,13000,Good,2500,Manoj Badoria,Kolkata
+3,Dankuni,22.671679,88.300209,10000,Moderate,10000,Arun Kumar Modi,Kolkata
+4,Thakurpukur,22.462139,88.307137,12000,Good,3049.2,Tanumay,Kolkata
+5,Barasat,22.726156,88.47496,16000,Good,15000,Arvind Sultania,Kolkata
+6,Chingrihata,22.342152,88.2150022,14000,Good,5000,Rochisnu Basu,Kolkata
+7,Beliaghata,22.567415,88.392433,11000,Good,700,Amitav Samanta,Kolkata
+8,Liluah,22.345999,88.225999,10500,Moderate,2300,R K Property,Kolkata
+9,Kasba Industrial,22.517618,88.384048,11000,Good,2000,Sukumar Choudhury,Kolkata
+10,Sovabazar,22.35457,88.215502,12500,Good,20250,Harsh Bhatter,Kolkata
+11,Tollygunge,22.4986357,88.3453905,13500,Good,2400,Jayanta Enterprise,Kolkata
+12,Ahiritola,22.352979,88.213318,11500,Moderate,1000,V P Gupta,Kolkata
+13,Salt Lake,22.575148,88.406242,11800,Good,3500,Kalpurush Properties,Kolkata
+14,Sodepur,22.698214,88.389476,11200,Moderate,10000,Deep Das,Kolkata
+15,Madhyamgram,22.7,88.45,13200,Good,20000,H S Modi,Kolkata
+16,Taratala,22.5134297,88.3075289,13800,Good,50000, Shiv Ganga Das,Kolkata
+17,Barrackpore,22.760195,88.371101,10900,Moderate,2000,Anisul Mehedi,Kolkata
+18,Bally,22.6443,88.3382,12000,Good,15300,HIDCO,Kolkata
+19,Salt Lake,22.5867,88.4171,11500,Good,30000,Belgachia Municipality,Kolkata
+20,Sutanuti,22.7247,88.48,19500,Moderate,18000,Ajay Banerjee,Kolkata
+21,Hauz Khas,28.5588,77.2076,74000,Good,11500,Amit Sharma,Delhi
+22,Rajouri Garden,28.6516,77.0954,69000,Good,9800,Neha Mehta,Delhi
+23,Pitam Pura,28.7084,77.1316,62000,Moderate,10500,Ravi Kumar,Delhi
+24,Sarai Kale Khan,28.591,77.262,65000,Good,10000,Kritika Singh,Delhi
+25,Shahdara,28.671,77.262,58000,Good,9000,Siddharth Agarwal,Delhi
+26,Bandra,19.0595,72.8295,80000,Good,5000,Rajesh Kumar,Mumbai
+27,Andheri,19.1197,72.8468,75000,Moderate,6000,Sunil Sharma,Mumbai
+28,Vashi,19.0748,73.0168,67000,Poor,6400,Sanjay Joshi,Mumbai
+29,Belapur,19.0072,73.0302,65000,Good,6200,Amit Jain,Mumbai
+30,Ulhasnagar,19.2215,73.0406,72000,Good,5900,Suman Agrawal,Mumbai
+31,Koregaon Park,18.5362,73.8936,60000,Good,12000,Ravi Kumar,Pune
+32,Baner,18.559,73.7898,55000,Moderate,11000,Anita Sharma,Pune
+33,Hinjewadi,18.5972,73.7187,50000,Good,13000,Suresh Patel,Pune
+34,Kalyani Nagar,18.5483,73.9045,65000,Poor,15000,Mina Desai,Pune
+35,Viman Nagar,18.5679,73.9143,45000,Good,10000,Rajesh Mehta,Pune
+36,Frazer Town,12.9811,77.6015,64000,Good,13000,Daniel Anderson,Bangalore
+37,Ulsoor,12.9734,77.6218,55000,Good,12000,Sophia Clark,Bangalore
+38,Kalyan Nagar,13.0104,77.6191,52000,Moderate,11000,Ethan Young,Bangalore
+39,Hennur,13.0245,77.6235,59000,Poor,13500,Ava Scott,Bangalore
+40,Kengeri,12.9016,77.489,58000,Good,12500,Benjamin Wright,Bangalore
+41,Banjara Hills,17.4126,78.4483,65000,Good,12000,A. Kumar,Hyderabad
+42,Jubilee Hills,17.4239,78.4112,70000,Moderate,15000,B. Reddy,Hyderabad
+43,Gachibowli,17.4401,78.3489,60000,Good,11000,C. Sharma,Hyderabad
+44,Hitech City,17.4504,78.3808,75000,Poor,18000,D. Patel,Hyderabad
+45,Madhapur,17.4483,78.3915,55000,Good,10000,E. Rao,Hyderabad

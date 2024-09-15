@@ -1,0 +1,121 @@
+Store_ID,Name,Latitude,Longitude,City
+1,Salt Lake City,22.5867,88.4177,Kolkata
+2,Rajarhat,22.5937,88.4677,Kolkata
+3,Kasba,22.5273,88.3845,Kolkata
+4,Behala,22.5013,88.3055,Kolkata
+5,Joka,22.452,88.3075,Kolkata
+6,Baguiati,22.6205,88.4213,Kolkata
+7,EM Bypass,22.5152,88.4023,Kolkata
+8,Patuli,22.4753,88.4042,Kolkata
+9,Bantala,22.5224,88.4355,Kolkata
+10,Taratala,22.5244,88.3189,Kolkata
+11,Uluberia,22.4708,88.1121,Kolkata
+12,Kalyani,22.975,88.4345,Kolkata
+13,Dankuni,22.6796,88.2998,Kolkata
+14,Howrah,22.5958,88.2636,Kolkata
+15,Baruipur,22.5937,88.4677,Kolkata
+16,Ultadanga,22.5988,88.3969,Kolkata
+17,Kolkata Airport,22.6452,88.4465,Kolkata
+18,Kalighat,22.5206,88.3436,Kolkata
+19,Alipore,22.5398,88.3297,Kolkata
+20,Baranagar,22.6341,88.3771,Kolkata
+21,Connaught Place,28.6285,77.2167,Delhi
+22,Hauz Khas,28.5535,77.2227,Delhi
+23,Rajouri Garden,28.6386,77.1091,Delhi
+24,Gurgaon,28.4595,77.0266,Delhi
+25,Lajpat Nagar,28.5593,77.2334,Delhi
+26,Janakpuri,28.6095,77.0893,Delhi
+27,South Extension,28.5824,77.2184,Delhi
+28,Chandni Chowk,28.6555,77.23,Delhi
+29,Karol Bagh,28.6521,77.1996,Delhi
+30,Dwarka,28.5615,77.0162,Delhi
+31,Vasant Kunj,28.5326,77.136,Delhi
+32,Pitampura,28.7051,77.1197,Delhi
+33,Saket,28.5231,77.2037,Delhi
+34,Preet Vihar,28.6426,77.303,Delhi
+35,Noida,28.5364,77.3757,Delhi
+36,Anand Vihar,28.6538,77.2936,Delhi
+37,Kalkaji,28.541,77.2601,Delhi
+38,Dilshad Garden,28.6902,77.3061,Delhi
+39,Rohini,28.6996,77.0927,Delhi
+40,Mayur Vihar,28.5657,77.2787,Delhi
+41,Colaba,18.9218,72.8347,Mumbai
+42,Bandra,19.0595,72.8295,Mumbai
+43,Andheri,19.1197,72.8468,Mumbai
+44,Juhu,19.0988,72.8265,Mumbai
+45,Powai,19.1176,72.9045,Mumbai
+46,Navi Mumbai,19.033,73.0297,Mumbai
+47,Goregaon,19.1453,72.8492,Mumbai
+48,Malad,19.2077,72.8552,Mumbai
+49,Worli,19.0207,72.8323,Mumbai
+50,Dadar,19.0205,72.8328,Mumbai
+51,Thane,19.2183,72.9781,Mumbai
+52,Lower Parel,19.0226,72.8356,Mumbai
+53,Chembur,19.0796,72.8941,Mumbai
+54,Mira Road,19.2434,72.8505,Mumbai
+55,Versova,19.1646,72.8267,Mumbai
+56,Khar,19.058,72.8353,Mumbai
+57,Santacruz,19.0873,72.8353,Mumbai
+58,Jogeshwari,19.1499,72.831,Mumbai
+59,Churchgate,18.9304,72.8258,Mumbai
+60,Malabar Hill,18.9535,72.8155,Mumbai
+61,Aundh,18.564,73.8026,Pune
+62,Koregaon Park,18.5406,73.9127,Pune
+63,Camp,18.5236,73.8717,Pune
+64,Viman Nagar,18.5527,73.911,Pune
+65,Pimpri,18.6293,73.7898,Pune
+66,Hinjewadi,18.5977,73.7492,Pune
+67,Kothrud,18.5105,73.8195,Pune
+68,Baner,18.5607,73.7896,Pune
+69,Wakad,18.6165,73.7698,Pune
+70,Hadapsar,18.5167,73.9276,Pune
+71,Shivajinagar,18.5333,73.8333,Pune
+72,Dapodi,18.5998,73.8055,Pune
+73,Nigdi,18.6418,73.8035,Pune
+74,Lohegaon,18.5644,73.9435,Pune
+75,Balewadi,18.5638,73.7858,Pune
+76,Ghorpadi,18.5204,73.9303,Pune
+77,Kharadi,18.548,73.9274,Pune
+78,Pimple Saudagar,18.6102,73.7827,Pune
+79,Deccan Gymkhana,18.5218,73.8341,Pune
+80,Erandwane,18.5107,73.8328,Pune
+81,Whitefield,12.9641,77.7014,Bangalore
+82,Koramangala,12.9279,77.6271,Bangalore
+83,Jayanagar,12.9344,77.5855,Bangalore
+84,Indiranagar,12.9716,77.6414,Bangalore
+85,Malleshwaram,13.0105,77.5594,Bangalore
+86,Bangalore East,12.9747,77.6419,Bangalore
+87,Bangalore South,12.9231,77.6142,Bangalore
+88,Hosur Road,12.9187,77.6215,Bangalore
+89,Rajajinagar,13.0114,77.5565,Bangalore
+90,Yeshwanthpur,13.018,77.5584,Bangalore
+91,Banashankari,12.9308,77.5712,Bangalore
+92,Hebbal,13.0376,77.6067,Bangalore
+93,Ulsoor,12.9719,77.6245,Bangalore
+94,Vijayanagar,12.9581,77.5622,Bangalore
+95,Kalyan Nagar,13.0148,77.6371,Bangalore
+96,Bellandur,12.9337,77.6358,Bangalore
+97,KR Puram,12.9814,77.6924,Bangalore
+98,Sarjapur,12.9116,77.6455,Bangalore
+99,J.P. Nagar,12.9316,77.5897,Bangalore
+100,HBR Layout,13.0213,77.5899,Bangalore
+101,Banjara Hills,17.4224,78.445,Hyderabad
+102,Jubilee Hills,17.4236,78.397,Hyderabad
+103,Hitech City,17.447,78.388,Hyderabad
+104,Gachibowli,17.4494,78.3882,Hyderabad
+105,Madhapur,17.4497,78.3918,Hyderabad
+106,Secunderabad,17.439,78.4986,Hyderabad
+107,Begumpet,17.4336,78.4532,Hyderabad
+108,Old City,17.3616,78.4747,Hyderabad
+109,Kukatpally,17.494,78.3965,Hyderabad
+110,Ameerpet,17.4335,78.4648,Hyderabad
+111,Shamshabad,17.2353,78.4291,Hyderabad
+112,Malkajgiri,17.4397,78.54,Hyderabad
+113,LB Nagar,17.357,78.5581,Hyderabad
+114,Hafizpet,17.4894,78.3474,Hyderabad
+115,Goshamahal,17.3795,78.4825,Hyderabad
+116,Chaderghat,17.3825,78.4822,Hyderabad
+117,Koti,17.3966,78.4914,Hyderabad
+118,Nampally,17.3938,78.4718,Hyderabad
+119,Malakpet,17.3824,78.485,Hyderabad
+120,Panjagutta,17.429,78.4392,Hyderabad

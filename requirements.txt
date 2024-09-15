@@ -1,0 +1,6 @@
+flask
+geopy
+pulp
+requests
+random2
+pandas

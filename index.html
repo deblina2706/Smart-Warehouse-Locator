@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Warehouse Locator</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://kit.fontawesome.com/0c51206927.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="icon" href="static/favicon.ico">
+    <style>
+        .store-card {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .store-card:hover {
+            transform: scale(1.05);
+        }
+
+        .store-card.selected {
+            background-color: #B43F3F;
+            color: white;
+        }
+
+        .criterion {
+            margin: 20px 0;
+        }
+
+        .btn-submit {
+            margin-top: 20px;
+            animation: bounceIn 2s;
+            background-color: #E57C23;
+            border-color: #E57C23;
+        }
+
+        .btn-submit:hover {
+            background-color: #E57C23;
+            border-color: #E57C23;
+        }
+
+        .btn-success {
+            color: #fff; 
+            background-color: #E57C23;
+            border-color: #E57C23;
+        }
+
+        .result-section {
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #064663;
+            color: white;
+        }
+
+        .result-section h2 {
+            color: #F0A500;
+        }
+
+        .result-section p {
+            color: #f8f9fa;
+            margin: 10px;
+        }
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(0.3, 0.3, 0.3);
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9);
+                transform: scale3d(0.9, 0.9, 0.9);
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+
+            80% {
+                -webkit-transform: scale3d(0.97, 0.97, 0.97);
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+           <a href="#home">
+                <img src="static/logo.png" alt="Walmart Logo" class="navbar-logo">
+            </a>
+        <div class="navbar-right">
+            <a href="#home">Home</a>
+            <a href="#about">Our Idea</a>
+            <a href="#warehouselocator">Warehouse Locator</a>
+            <a href="#learnmore">Learn More</a>  
+            <a href="#team">Our Team</a>  
+        </div>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>Smart <br> Warehouse <br> Locator</h1>
+        <h3><b>Find the optimal locations for <br> your new retail stores.</b></h3>
+        <br>
+        <a href="#warehouselocator" class="btn">Get Started</a>
+    </div>
+    <div class="scroll-down">
+        <a href="#about" class="scroll-btn">
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/ScZylcXINL0cgqIB/scene.splinecode"></spline-viewer>
+</section>
+
+
+
+    <!-- About -->
+<section class="about" id="about">
+    <div class="about-img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OnUUhCvpHps?si=aaXgpzKNL-mr7hyP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="about-text">
+        <h2>Our Idea</h2><br>
+        <p>Our team is developing a warehouse locator that identifies the optimal warehouse location based on existing store locations, optimizing 
+            for cost, distance, or capacity. The tool displays selected stores, optimal warehouse location on a map with live traffic data, 
+            and current weather details.</p><br>
+        <a href="#warehouselocator" class="btn">Know More!</a>
+    </div>
+</section>
+
+
+    <!-- Warehouse Locator -->
+    <section class="warehouselocator" id="warehouselocator">
+        <div class="container">
+            <br><br>
+            <h2 class="text-center text-primary">Select Store Locations</h2><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="city-select">Select City:</label>
+                        <select id="city-select" class="form-control">
+                            <option value="">Select a City</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="store-select">Stores:</label>
+                        <div id="store-select" class="d-flex flex-wrap">
+                            <!-- Store options will be populated here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="form-group criterion">
+                        <label>Optimization Criterion:</label><br>
+                        <div>
+                            <input type="radio" name="criterion" value="cost" id="cost-criterion"> Lowest Cost
+                        </div>
+                        <div>
+                            <input type="radio" name="criterion" value="distance" id="distance-criterion"> Shortest Distance
+                        </div>
+                        <div>
+                            <input type="radio" name="criterion" value="both" id="both-criterion"> Lowest Cost and Shortest Distance
+                        </div>
+                        <div>
+                            <input type="radio" name="criterion" value="capacity" id="capacity-criterion"> Maximum Capacity
+                        </div>
+                    </div>
+                    <button class="btn btn-success btn-submit" onclick="submitSelection()">Submit</button>
+                </div>
+                <div class="col-md-6">
+                    <div id="mapContainer"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 result-section" id="result" style="background-color: #414141;">
+                    <!-- Result will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Learn More -->
+    <section id="learnmore" class="learnmore">
+        <div class="container">
+            <br><br>
+            <h2 class="text-center text-primary">Learn More</h2><br>
+            <p>In the pursuit of selecting the optimal warehouse locations, several key factors must be carefully evaluated. 
+                Our 'Learn More' section delves into the critical elements that can significantly impact your decision-making process. 
+                From understanding the intricacies of traffic patterns to analyzing cost considerations and assessing the influence of 
+                weather conditions, this section offers valuable insights that will help you make informed, strategic choices for 
+                your warehouse operations.</p><br>
+            <div class="row">
+                <div class="learn-row">
+                    <div class="info-section" data-toggle="modal" data-target="#trafficModal">
+                        <i class="fa-solid fa-traffic-light fa-2xl" style="color: #F0A500;"></i><br><br>
+                        <h3>Traffic</h3>
+                        <p>Details about traffic conditions and how they impact warehouse placement.</p>
+                    </div>
+                </div>
+                <div class="learn-row">
+                    <div class="info-section" data-toggle="modal" data-target="#costModal">
+                        <i class="fa-solid fa-hand-holding-dollar fa-2xl" style="color: #F0A500;"></i><br><br>
+                        <h3>Cost</h3>
+                        <p>Information on cost considerations for different warehouse locations.</p>
+                    </div>
+                </div>
+                <div class="learn-row">
+                    <div class="info-section" data-toggle="modal" data-target="#weatherModal">
+                        <i class="fa-solid fa-smog fa-2xl" style="color: #F0A500;"></i><br><br>
+                        <h3>Weather</h3>
+                        <p>Data on weather conditions that could affect warehouse operations and location choices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+
+    <!-- Traffic Modal -->
+<div class="modal fade" id="trafficModal" tabindex="-1" role="dialog" aria-labelledby="trafficModalLabel" aria-hidden="true" style="padding-right: 100px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #F0A500;">
+                <h5 class="modal-title" id="trafficModalLabel" style="color: #252525;">Traffic Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="background-color: #252525; color: #FFFFFF;">
+                <p id="trafficDetails">Loading traffic details...</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    
+    <!-- Cost Modal -->
+    <div class="modal fade" id="costModal" tabindex="-1" role="dialog" aria-labelledby="costModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width: 700px;">
+                <div class="modal-header" style="background-color: #F0A500;">
+                    <h5 class="modal-title" id="costModalLabel" style="color: #252525;">Cost Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #FFFFFF;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background-color: #252525; color: #FFFFFF;">
+                    <img src="static/cost.png" alt="Cost" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weather Modal -->
+    <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #F0A500;">
+                    <h4 class="modal-title" id="weatherModalLabel" style="color: #252525;">Weather Information</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #FFFFFF;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background-color: #252525; color: #FFFFFF;" id="weather-info">
+                    <p>Loading weather data...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Team -->
+    <section class="team-section" id="team">
+        <div class="team-container"><br><br>
+          <h2 class="team-title">Meet Our Team</h2><br>
+          <p>We are senior Computer Science students, driven by our passion for technology and innovation. Together, we're tackling 
+            challenging projects that push the boundaries of what's possible. Each of us brings specialized expertise, and as a team, 
+            we're turning ideas into reality. Discover the people diligently pursuing the vision to make it a reality!</p><br>
+          <div class="team-cards">
+            <div class="team-card">
+              <img src="static/Tuneer.jpg" alt="Member 1">
+              <h4>Tuneer Paul (Lead)</h4>
+              <p>tuneerpaul01@gmail.com</p>
+              <p>Backend Developer</p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/tuneerpaul/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/TuneerP"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/tuneerpaul/"><i class='bx bxl-instagram' ></i></a>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="static/Swarnava.jpg" alt="Member 2">
+              <h4>Swarnava Biswas</h4>
+              <p>swarnavabiswas2003@gmail.com</p>
+              <p>Cloud Deployment and GitHub Specialist</p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/swarnava-biswas/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/AlexRsvlt"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/s.w.a.r.n.03/"><i class='bx bxl-instagram' ></i></a>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="static/Deblina.jpg" alt="Member 3">
+              <h4>Deblina Sarkar</h4>
+              <p>deblinasarkar804@gmail.com</p>
+              <p>Frontend Developer</p>
+              <div class="social">
+                <a href="http://www.linkedin.com/in/deblina27/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/deblina2706"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/deblina27/"><i class='bx bxl-instagram' ></i></a>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="static/Ankita.jpg" alt="Member 4">
+              <h4>Ankita Ghosal</h4>
+              <p>aankita2782001@gmail.com</p>
+              <p>Data Analyst</p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/ankita-ghosal-442ba6228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/RakhiGhosal"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/aankita.ghosal/"><i class='bx bxl-instagram' ></i></a>
+              </div>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </section>
+      
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD199nguuWODwT1FfiTEDqcbQxc1PBQf6Q"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+        const stores = JSON.parse('{{ stores|tojson | safe }}'); // Ensure proper JSON format
+        const storeSelectDiv = document.getElementById('store-select');
+        const citySelect = document.getElementById('city-select');
+        const resultDiv = document.getElementById('result');
+        const selectedStoreIds = [];
+        const selectedStoreMarkers = [];
+        let map;
+        let trafficLayer;
+        let infoWindow;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('mapContainer'), {
+                center: { lat: 20, lng: 0 }, // Example: Global view
+                zoom: 2
+            });
+
+            trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+
+            infoWindow = new google.maps.InfoWindow();
+
+            const cities = [...new Set(stores.map(store => store.City))];
+            cities.forEach(city => {
+                const option = document.createElement('option');
+                option.value = city;
+                option.textContent = city;
+                citySelect.appendChild(option);
+            });
+
+            citySelect.addEventListener('change', function () {
+                const selectedCity = this.value;
+                storeSelectDiv.innerHTML = ''; // Clear current stores
+                selectedStoreIds.length = 0; // Clea.r selected stores
+                selectedStoreMarkers.forEach(markerObj => markerObj.marker.setMap(null)); // Clear existing markers
+                selectedStoreMarkers.length = 0; // Clear marker array
+                if (selectedCity) {
+                    const filteredStores = stores.filter(store => store.City === selectedCity);
+                    const cityLocation = filteredStores[0];
+                    map.setCenter({ lat: cityLocation.Latitude, lng: cityLocation.Longitude });
+                    map.setZoom(10);
+                    populateStores(filteredStores);
+                } else {
+                    map.setCenter({ lat: 20, lng: 0 });
+                    map.setZoom(2);
+                }
+            });
+        }
+
+        function populateStores(storeList) {
+            storeList.forEach(store => {
+                const storeCard = document.createElement('div');
+                storeCard.classList.add('store-card', 'col-md-6');
+                storeCard.textContent = store.Name;
+                storeCard.dataset.id = store.Store_ID;
+                storeCard.onclick = () => {
+                    storeCard.classList.toggle('selected');
+                    if (storeCard.classList.contains('selected')) {
+                        selectedStoreIds.push(store.Store_ID);
+                        addStoreMarker(store);
+                    } else {
+                        const index = selectedStoreIds.indexOf(store.Store_ID);
+                        if (index > -1) {
+                            selectedStoreIds.splice(index, 1);
+                            removeStoreMarker(store.Store_ID);
+                        }
+                    }
+                };
+                storeSelectDiv.appendChild(storeCard);
+            });
+        }
+
+        function addStoreMarker(store) {
+            const marker = new google.maps.Marker({
+                position: { lat: store.Latitude, lng: store.Longitude },
+                map: map,
+                icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                title: store.Name
+            });
+
+            marker.addListener('mouseover', () => {
+                infoWindow.setContent(store.Address);
+                
+            });
+
+            marker.addListener('mouseout', () => {
+                infoWindow.close();
+            });
+
+            selectedStoreMarkers.push({
+                id: store.Store_ID,
+                marker: marker
+            });
+        }
+
+        function removeStoreMarker(storeId) {
+            const markerIndex = selectedStoreMarkers.findIndex(m => m.id === storeId);
+            if (markerIndex > -1) {
+                selectedStoreMarkers[markerIndex].marker.setMap(null);
+                selectedStoreMarkers.splice(markerIndex, 1);
+            }
+        }
+
+        let currentWarehouseMarker = null;
+
+        function displayWarehouseMarker(optimalWarehouse) {
+        // Remove the existing warehouse marker if it exists
+        if (currentWarehouseMarker) {
+            currentWarehouseMarker.setMap(null);
+        }
+
+        // Create a new warehouse marker with a tooltip title
+        currentWarehouseMarker = new google.maps.Marker({
+            position: { lat: optimalWarehouse.Latitude, lng: optimalWarehouse.Longitude },
+            map: map,
+            icon: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+            title: `${optimalWarehouse.Name} (Optimal Warehouse)` // This will show as a native tooltip
+        });
+
+        // Center the map on the new warehouse marker
+        map.setCenter({ lat: optimalWarehouse.Latitude, lng: optimalWarehouse.Longitude });
+        map.setZoom(10);
+        }
+
+       
+        function submitSelection() {
+            const criterion = document.querySelector('input[name="criterion"]:checked').value;
+            
+            $.ajax({
+                url: '/optimal_warehouse',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    selectedStoreIds: selectedStoreIds,
+                    optimizationCriterion: criterion
+                }),
+                success: function(response) {
+                    const optimalWarehouse = response.optimalWarehouse;
+                    $('#result').html(`
+                        <h2><b>Optimal Warehouse Location Details</b></h2><br>
+                        <p><strong>Name:</strong> ${optimalWarehouse.Name}</p>
+                        <p><strong>Latitude:</strong> ${optimalWarehouse.Latitude}</p>
+                        <p><strong>Longitude:</strong> ${optimalWarehouse.Longitude}</p>
+                        <p><strong>Cost:</strong> ₹ ${optimalWarehouse.Cost}</p>
+                        <p><strong>Connectivity:</strong> ${optimalWarehouse.Connectivity}</p>
+                        <p><strong>Land Ownership:</strong> ${optimalWarehouse.Ownership}</p>
+                        <p><strong>Capacity:</strong> ${optimalWarehouse.Capacity} sqft.</p>
+                        <p><strong>City:</strong> ${optimalWarehouse.City}</p>
+                    `);
+
+                    displayWarehouseMarker(optimalWarehouse);
+
+                    // Store the optimal warehouse coordinates for weather data
+                    const warehouseLat = optimalWarehouse.Latitude;
+                    const warehouseLon = optimalWarehouse.Longitude;
+
+                    // Fetch and display weather data when the modal opens
+                    $('#weatherModal').on('show.bs.modal', function() {
+                        $.ajax({
+                            url: `/get_weather?lat=${warehouseLat}&lon=${warehouseLon}`,
+                            type: 'GET',
+                            success: function(weatherData) {
+                                $('#weather-info').html(`
+                                    <h5>Weather Details</h5>
+                                    <p><strong>Temperature:</strong> ${weatherData.temperature}°C</p>
+                                    <p><strong>Condition:</strong> ${weatherData.weather}</p>
+                                    <p><strong>Humidity:</strong> ${weatherData.humidity}%</p>
+                                    <p><strong>Wind Speed:</strong> ${weatherData.wind_speed} m/s</p>
+                                `);
+                            },
+                            error: function() {
+                                $('#weather-info').html('<p>Failed to load weather data.</p>');
+                            }
+                        });
+                    });
+                },
+                
+                
+
+                error: function(error) {
+                    $('#result').html('<p>An error occurred while fetching the optimal warehouse location.</p>');
+                }
+            });
+        }
+
+
+        function loadTrafficInfo() {
+        const trafficInfo = {
+            speed: `${Math.floor(Math.random() * (80 - 30 + 1)) + 30} km/h`,
+            avgSpeed: `${Math.floor(Math.random() * (100 - 50 + 1)) + 50} km/h`,
+            congestion: `${Math.floor(Math.random() * 100)}%`
+        };
+
+        document.getElementById('trafficDetails').innerHTML = `
+            <h5>Traffic Speed: ${trafficInfo.speed}</h5>
+            <h5>Average Speed: ${trafficInfo.avgSpeed}</h5>
+            <h5>Congestion Level: ${trafficInfo.congestion}</h5>
+        `;
+    }
+
+    $('#trafficModal').on('show.bs.modal', function () {
+        loadTrafficInfo();
+    });
+        
+        window.onload = initMap;
+ 
+    </script>
+  
+</body>
+</html>
